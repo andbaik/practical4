@@ -54,7 +54,7 @@
 // getSalary(), который будет выводить зарплату работника. Зарплата - 
 // это произведение (умножение) ставки rate на количество отработанных 
 // дней days.
-
+/*
 class worker{
     constructor(name, surname, rate,days){
         this.name = name;
@@ -70,33 +70,82 @@ worker = new worker('Andrey', 'Makeenko', 100, 21);
 console.log(worker.name);
 console.log(worker.surname);
 console.log(worker.getSalary());
+
+*/
+
 //Домашнее задание
 // Создайте объект city1 (var city1 = {}), укажите у него свойства name 
 // (название города, строка) со значением «ГородN» и population 
 // (населенность города, число) со значением 10 млн.
+/*
+var city1 = {};
+    city1.name = 'ГородN';
+    city1.population = 1000000;
+    city1.getName = function(){return this.name};
+    city1.exportStr = function(){return `Город ${this.name}  популяция ${this.population}`};
+
+console.log(city1);
+*/
 
 // Создайте объект city2 через нотацию {name: "ГородM", population: 1e6}.
+/*
+var city2 = {
+    name: "ГородM",
+    population: 1e6,
+    getName: function() {
+        return(this.name);
+      },
+      exportStr: function(){
+        return `Город ${this.name}  популяция ${this.population}`
+      }
+    };
 
+console.log(city2);
+*/
 // Создайте у объектов city1 и city2 методы getName(), которые вернут 
 // соответствующие названия городов.
+/*
+console.log(city1.getName());
+console.log(city2.getName());
+*/
 
 // Создайте методы exportStr() у каждого из объектов. Этот метод должен 
 // возвращать информацию о городе в формате 
 // «name=ГородN\npopulation=10000000\n». Для второго города будет строка 
 // со своими значениями. Примечание: можно обращаться к каждому свойству 
 // через цикл for/in, но методы объекта возвращать не нужно.
+/*
+console.log(city1.exportStr());
+console.log(city2.exportStr());
+
+for (let i=1;i<3;i++){
+    console.log(city{i}.name);
+}*/
 
 // Создайте глобальную функцию getObj(), которая возвращает this. 
 // А у каждого из объектов city1 или city2 метод getCity, который 
 // ссылается на getObj. Проверьте работу метода. Примечание: к объекту 
 // вызова можно обратиться через this..
 
+
 // Создайте массив d1 с числовыми величинами 45,78,10,3.  
 // Добавьте в массив d1 еще одно число ( d1[7] = 100). 
 // Выведите в консоль весь массив и его элементы с индексами 6 и 7.
+/*
+let d1 = [45, 78, 10, 3];
+d1[7] = 100;
+console.log (d1);
+console.log (d1[6] , d1[7]);
+*/
 
 // Создайте массив d2 с числовыми величинами 45,78,10,3. 
 // Посчитайте в переменную sum2 сумму чисел в нем, при помощи цикла for.
+let d2 = [45,78,10,3];
+let sum2;
+for (let j=0; j < d2.length; j++){
+    sum2 += d2 [j];
+}
+console.log (sum2);
 
 // Создайте массив d3 с числовыми величинами 45,78,10,3. 
 // Добавьте в массив d3 еще одно число (например, d[7] = 100) 
